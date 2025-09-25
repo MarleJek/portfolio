@@ -16,7 +16,6 @@
     body {
       background-color: #2e2e2e;
       color: #fff;
-      line-height: 1.6;
     }
 
     header {
@@ -26,7 +25,7 @@
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 45px;
       letter-spacing: 2px;
     }
 
@@ -34,6 +33,7 @@
       padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
+      height: 268px;
     }
 
     section h2 {
@@ -83,22 +83,79 @@
         font-size: 1.8rem;
       }
     }
+
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .dropbtn {
+    background-color: #373737;
+    color: white;
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .dropbtn:hover {
+    background-color: #555;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3d3d3d;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #575757;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropbtn i {
+    margin-left: 5px;
+  }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Moje Portfolio</h1>
-  </header>
+  <h1>Moje Portfolio</h1>
+  <div class="dropdown">
+    <button class="dropbtn">Menu <i class="fas fa-caret-down"></i></button>
+    <div class="dropdown-content">
+      <a href="https://github.com/MarleJek" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+    </div>
+  </div>
+</header>
 
   <section id="home">
     <h2>Witaj!</h2>
-    <p>siema byku</p>
+    <p>siemano nie bondziorno</p>
   </section>
 
   <section id="about">
     <h2>O mnie</h2>
-    <p>no jakies zainteresowania mam cnie</p>
+    <p>jestem koneserem fiata bravo i srednich rozgrywek polskiej ligi esportowej w counter strike 2</p>
   </section>
 
   <section id="projects">
@@ -106,8 +163,8 @@
     <div class="projects">
       <div class="project">
         <h3>Portfolio</h3>
-        <a href="https://github.com/MarleJek" target="_blank">
-            <i class="fab fa-github"></i> GitHub
+        <a href="https://github.com/MarleJek/portfolio" target="_blank">
+            <i class="fab fa-github"></i> Zobacz GitHub'a
         </a>
       </div>
     </div>
@@ -127,5 +184,3 @@
   </script>
 </body>
 </html>
-
-
